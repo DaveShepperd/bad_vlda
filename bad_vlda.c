@@ -32,6 +32,10 @@ SOFTWARE.
 #include <stdarg.h>
 #include <unistd.h>
 
+#ifndef O_BINARY
+#define O_BINARY 0
+#endif
+
 static int walkBuf(uint8_t *buf, size_t len)
 {
 	uint8_t *bp = buf;
@@ -72,7 +76,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr,"Failed to malloc %ld bytes of memory\n", st.st_size);
 		return 1;
 	}
-	fd = open(argv[1],O_RDONLY);
+	fd = open(argv[1],O_RDONLY|O_BINARY);
 	if ( fd < 0 )
 	{
 		fprintf(stderr,"Failed to open for input '%s': %s\n", fname, strerror(errno));

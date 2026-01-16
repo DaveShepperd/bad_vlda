@@ -264,7 +264,7 @@
 			Name="Source Files"
 			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
 			GUID="{47865944-CBE0-42E6-9518-2CD8EEE9BF96}">
-			<F N="badvlda.c"/>
+			<F N="bad_vlda.c"/>
 		</Folder>
 		<Folder
 			Name="Header Files"
@@ -281,6 +281,10 @@
 		<Folder
 			Name="Other Files"
 			Filters=""
-			GUID="{AA600779-1783-41E8-9745-4C223FB40B29}"/>
+			GUID="{AA600779-1783-41E8-9745-4C223FB40B29}">
+			<F
+				N="Makefile"
+				Type="Makefile"/>
+		</Folder>
 	</Files>
 </Project>
